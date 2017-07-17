@@ -1,0 +1,23 @@
+<div ng-controller="NavController">
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"> Google Plus Clone </a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="/">Home</a></li>
+       {% if user.is_authenticated %}
+          <li><a href="/+{{ user.username }}">+{{ user.username }}</a></li>
+          <li><a href="/+{{ user.username }}/settings">Settings</a></li>
+          <li><a href="javascript:void(0)" ng-click="logout()"> Logout </a>
+        {% else %}
+          <li><a href="#">Profile</a></li>
+         <li><a href="/login">Login</a></li>
+         <li><a href="/register">Register</a></li>
+        {% endif %}
+      
+    </ul>
+  </div>
+</nav>
+</div>
