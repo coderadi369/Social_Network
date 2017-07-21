@@ -1,0 +1,17 @@
+
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"> Google Plus Clone </a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="/"> Home</a></li>
+       <li ng-hide={{res}}><a href="/login">Login</a></li>
+       <li ng-hide={{res}}><a href="/register">Register</a></li>
+       <li ng-show={{res}}><a href="/users/{{profile}}">Profile</a></li>
+       <li ng-show={{res}} ng-click="logout()"><a href="">Logout</a></li>
+      
+    </ul>
+  </div>
+</nav>

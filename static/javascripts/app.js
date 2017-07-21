@@ -1,4 +1,4 @@
-angular.module('CloneApp', ['ui.router','AppController','ngCookies'])
+angular.module('CloneApp', ['ui.router','AppController','ngCookies','AppService','ngDialog'])
 .config(function($stateProvider, $locationProvider) {
   $stateProvider.state('home', {
     url: '/',
@@ -16,6 +16,12 @@ angular.module('CloneApp', ['ui.router','AppController','ngCookies'])
    templateUrl:'static/Login.html',
    controller:'LoginController'
     
+}).state('profile',{
+
+  url:'/users/:profile',
+  templateUrl:'static/Profile.html',
+  controller:'ProfileController'
+
 });
 
   $locationProvider.html5Mode(true);
