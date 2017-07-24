@@ -1,1 +1,1 @@
-python manage.py runserver
+web: gunicorn django_angular_project.wsgi --log-file -
