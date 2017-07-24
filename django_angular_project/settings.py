@@ -25,7 +25,7 @@ SECRET_KEY = '%o^306d8%*fbutlsa!op4_si&zdep%1@yglvh^5%j4xle2*fjv'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['blooming-peak-35177.herokuapp.com']
 
 
 # Application definition
