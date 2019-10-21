@@ -5,7 +5,7 @@ Django==1.11.3
 djangorestframework==3.6.3
 drf-nested-routers==0.90.0
 gunicorn==19.7.1
-httpie==0.9.9
+httpie==1.0.3
 idna==2.5
 numpy==1.13.1
 psycopg2==2.7.2
